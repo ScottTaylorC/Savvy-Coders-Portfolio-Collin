@@ -1,0 +1,25 @@
+{
+  "name": "CollinTaylor",
+  "version": "1.0.0",
+  "description": "![picture](https://pet-uploads.adoptapet.com/b/3/9/98141772.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottTaylorC/Savvy-Coders-Portfolio-Collin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottTaylorC/Savvy-Coders-Portfolio-Collin/issues"
+  },
+  "homepage": "https://github.com/ScottTaylorC/Savvy-Coders-Portfolio-Collin#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "http-server": "^0.11.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}

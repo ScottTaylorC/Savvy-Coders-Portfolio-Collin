@@ -5,6 +5,6 @@
 
 I'm new to coding and trying my best to learn.
 
-We can also do __basic__ inline _formatting_
+I can also do __basic__ inline _formatting_
 
 1. [GitHub](https://github.com/ScottTaylorC)

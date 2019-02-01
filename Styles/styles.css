@@ -1,0 +1,42 @@
+<style>
+h1 {
+    background-color: rgb(174, 0, 255);
+    color: tomato;
+}
+
+h2 {
+    color: hotpink;
+}
+
+h3 {
+    background-color: cyan;
+}
+
+p {
+    color: darkcyan;
+    background-color: darkred;
+}
+
+ul {
+    background-color: darkseagreen;
+    color: gold;
+}
+
+li {
+    font-size: 20px;
+    color: lawngreen;
+    background-color: black;
+}
+
+.springgreen {
+    color: springgreen;
+}
+
+.pink {
+    background-color: rgb(185, 20, 130);
+}
+
+#content {
+    background-color: aquamarine;
+}
+</style>

@@ -1,45 +1,53 @@
+body{
+    background-color: darkgrey;
+    /* padding: 0% 39%;
+    max-width: 100%;
+    min-width: 0px; */
+    /* display: inline-block; */
+}
+
 h1 {
-    background-color: rgb(174, 0, 255);
-    color: tomato;
-    padding: 20px 40px 75px;
+    /* background-color: grey; */
+    /* color: tomato; */
+    /* padding: 20px 39% ; */
     height: 60%;
-    width: 25%;
+    /* width: 25%; */
     margin: 0 auto;
 }
 
 h2 {
-    color: hotpink;
+    /* color: hotpink; */
 }
 
 h3 {
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
 p {
-    color: darkcyan;
-    background-color: darkred;
+    color: black;
 }
 
 ul {
-    background-color: darkseagreen;
-    color: gold;
+    /* background-color: darkseagreen;
+    color: gold; */
     padding: 0;
 }
 
 li {
     font-size: 20px;
-    color: lawngreen;
-    background-color: black;
+    /* color: lawngreen; */
+    /* background-color: grey; */
     display: inline;
+    margin: 20px 20px auto 0px;
 }
 
-/* li:first-child {
-    margin-right: 50px;
+/* li:first-of-type {
+    margin-right: 20px;
 } */
 
-li:first-of-type {
+/* li:nth-last-of-type(2) {
     margin-right: 100px;
-}
+} */
 
 .container {
     max-width: 1080px;
@@ -47,14 +55,20 @@ li:first-of-type {
     margin: 0 auto;
 }
 
-.springgreen {
-    color: springgreen;
-}
-
-.pink {
-    background-color: rgb(185, 20, 130);
-}
+/* .background {
+    background-color: grey;
+} */
 
 #content {
     background-color: aquamarine;
 }
+
+/* #wrap {
+    width: 80%;
+    margin: auto;
+    background: grey;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    
+  } */

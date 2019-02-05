@@ -60,15 +60,14 @@ li {
 } */
 
 #content {
-    background-color: aquamarine;
+    background-color: lightgrey;
 }
 
-/* #wrap {
+#wrap {
     width: 80%;
     margin: auto;
     background: grey;
     overflow: hidden;
     padding: 15px;
     text-align: center;
-    
-  } */
+}

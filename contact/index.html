@@ -7,26 +7,43 @@
     <link rel="stylesheet" href="../Styles/styles.css">
     <title>Contact Form</title>
 </head>
-<body>
-    <div class="container">
-    <div id="navigation">
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-         </ul>
-    </div>
-    <div id="header">
-       <h1>Get in touch</h1> 
-    </div>
-    <div class="content"></div>
-      <form action="">
-         <label for="Fname">First Name</label> 
-        <input type="text">  
-      </form>
-    </div>
-
-    <div id="footer">
-
-    </div>
-</body>
+<div id="wrap">
+    <body>
+        <div class="container">
+        <div id="navigation">
+             <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="index.html">Contact</a></li>
+             </ul>
+        </div>
+        <div id="header">
+           <h1>Get in touch</h1> 
+        </div>
+        <div class="content"></div>
+          <form action="" method="POST">
+            <label for="Fname">First Name</label> 
+            <input type="text" name="first-name" id="Fname" required>
+    
+            <label for="Lname">Last Name</label> 
+            <input type="text" name="Last-name" id="Lname" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="fone">Phone</label>
+            <input type="Tel" name="fone" id="fone">
+    
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="PLease enter message here"></textarea>
+    
+            <input type="submit" value="submit">
+            <input type="reset" value="Clear">
+          </form>
+        </div>
+    
+        <div id="footer">
+    
+        </div>
+    </body>
+</div>
 </html>

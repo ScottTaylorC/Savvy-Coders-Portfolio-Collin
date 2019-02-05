@@ -50,9 +50,12 @@ li {
 } */
 
 .container {
-    max-width: 1080px;
-    min-width: 600px;
+    /* max-width: 1080px;
+    min-width: 600px; */
     margin: 0 auto;
+    /* Enable below while disabling #wrap for center content with solid background */
+    /* width: 960px;
+    text-align: center; */
 }
 
 /* .background {

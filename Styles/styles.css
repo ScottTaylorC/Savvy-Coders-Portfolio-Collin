@@ -37,8 +37,8 @@ li {
     font-size: 20px;
     /* color: lawngreen; */
     /* background-color: grey; */
-    display: inline;
-    margin: 20px 20px auto 0px;
+    /* display: inline; */
+    /* margin: 0px 20px 10px 0px; */
 }
 
 /* li:first-of-type {
@@ -54,8 +54,17 @@ li {
     min-width: 600px; */
     margin: 0 auto;
     /* Enable below while disabling #wrap for center content with solid background */
-    /* width: 960px;
-    text-align: center; */
+    width: 960px;
+    text-align: center;
+}
+
+#header {
+    /* text-align: center; */
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 150px;
+    padding-bottom: 5px;
+    background-color: lightgrey;
 }
 
 /* .background {
@@ -63,14 +72,41 @@ li {
 } */
 
 #content {
-    background-color: lightgrey;
+    text-align: center;
 }
 
-#wrap {
+/* #wrap {
     width: 80%;
     margin: auto;
     background: grey;
     overflow: hidden;
     padding: 15px;
     text-align: center;
+} */
+
+#navigation {
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 100px;
+}
+
+#navigation > ul > li {
+    display: inline;
+    position: relative;
+    margin: 0px 20px 10px 0px;
+}
+
+#navigation > ul > li:hover > ul {
+    display: block;
+}
+
+#navigation > ul > li >ul {
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
 }

@@ -2,16 +2,12 @@ import Navigation from './src/Navagation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
-import nameChecker from './src/Greeter';
 
-var originalContent = document.body.innerHTML;
+var root = document.querySelector('#root');
 
-document.body.innerHTML = ` 
+root.innerHTML = ` 
     ${Navigation}
     ${Header}
     ${Footer}
     ${Content}
-    ${originalContent}
 `;
-
-nameChecker();

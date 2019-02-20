@@ -5,6 +5,6 @@ export default function nameChecker(){
         nameChecker();
     }
     else{
-        document.querySelector.textContent = `Hello, ${name}`;
+        document.querySelector('h1').textContent = `Hello, ${name}`;
     }
 }

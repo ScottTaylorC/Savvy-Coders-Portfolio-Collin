@@ -7,7 +7,7 @@ var root = document.querySelector('#root');
 
 root.innerHTML = ` 
     ${Navigation}
-    ${Header}
+    ${Header("Welcome to my Savvy Coder's Website!")}
     ${Footer}
     ${Content}
 `;

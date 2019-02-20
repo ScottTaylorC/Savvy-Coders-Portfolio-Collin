@@ -1,4 +1,5 @@
-export default `
+export default function Content(){
+    return `
     <div id="content">
 
             <img src="https://pet-uploads.adoptapet.com/b/3/9/98141772.jpg" alt="A picture of a King Charles Cocker Spaniel mix">
@@ -23,3 +24,4 @@ export default `
             </ul>
     </div>
 `;
+}

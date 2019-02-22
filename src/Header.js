@@ -5,5 +5,6 @@ export default function header(title){
             <h2>Also Hello World</h2>
             <h3>one more for good measure</h3>
         </div>
+<button id="test">Click Me</button>
 `;
 }

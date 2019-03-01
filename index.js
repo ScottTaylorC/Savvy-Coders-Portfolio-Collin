@@ -17,7 +17,7 @@ var State = {
         'title': 'Contact Collin'
     },
     'Projects': {
-        'links': [ 'Home', 'Blog', 'Contact', ],
+        'links': [ 'Home', 'Blog', 'Contact' ],
         'title': 'Behold my works, ye mighty, and despair'
     },
 };

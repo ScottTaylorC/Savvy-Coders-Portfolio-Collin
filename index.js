@@ -5,15 +5,19 @@ import Footer from './src/Footer';
 
 var State = {
     'Home': {
+        'links': [ 'Blog', 'Contact', 'Projects' ],
         'title': 'Welcome to Collin\'s Savvy Coder Website'
     },
     'Blog': {
+        'links': [ 'Home', 'Contact', 'Projects' ],
         'title': 'Read my words and stuff'
     },
     'Contact': {
+        'links': [ 'Home', 'Blog', 'Projects' ],
         'title': 'Contact Collin'
     },
     'Projects': {
+        'links': [ 'Home', 'Blog', 'Contact', ],
         'title': 'Behold my works, ye mighty, and despair'
     },
 };

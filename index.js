@@ -14,13 +14,20 @@ var State = {
         'title': 'Contact Collin'
     },
     'Projects': {
-        'title': 'Behold my works, ye mighty, adn despair'
+        'title': 'Behold my works, ye mighty, and despair'
     },
 };
 var root = document.querySelector('#root');
+var render;
 
-function render(state){
+function navHandler(event){
+    event.preventDefault();
+    render(State[event.target.textContent]);
+}
+
+render = function Render(state){
     var links;
+    var i = 0;
 
     root.innerHTML = ` 
     ${Navigation(state)}
@@ -31,28 +38,11 @@ function render(state){
 
     links = document.querySelectorAll('#navigation > ul > li> a');
 
-    links[0].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
+    while(i < links.length){
+        links[i].addEventListener('click', navHandler);
 
-    links[1].addEventListener('click', (event) => {
-        event.preventDefault();
-
-        render(State[event.target.textContent]);
-    });
-
-    links[2].addEventListener('click', (event) => {
-        event.preventDefault();
-
-        render(State[event.target.textContent]);
-    });
-
-    links[3].addEventListener('click', (event) => {
-        event.preventDefault();
-
-        render(Stateevent.target.textContent);
-    });
-}
+        i++;
+    }
+};
 
 render(State.Home);

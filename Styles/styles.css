@@ -16,13 +16,14 @@ ul {
 }
 
 li {
-    font-size: 20px;
+    font-size: 150%;
 }
 
 .container {
     margin: 0 auto;
     width: 960px;
     text-align: center;
+    padding: 10px;
 }
 
 #header {

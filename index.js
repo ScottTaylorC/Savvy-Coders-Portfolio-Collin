@@ -2,52 +2,31 @@ import Navigation from './src/Navigation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
-import lodash from 'lodash';
+import * as State from './state';
+import { startCase } from 'lodash';
+import Navigo from 'navigo';
 
-var State = {
-    'Home': {
-        'links': [ 'Blog', 'Contact', 'Projects' ],
-        'title': 'Welcome to Collin\'s Savvy Coder Website'
-    },
-    'Blog': {
-        'links': [ 'Home', 'Contact', 'Projects' ],
-        'title': 'Read my words and stuff'
-    },
-    'Contact': {
-        'links': [ 'Home', 'Blog', 'Projects' ],
-        'title': 'Contact Collin'
-    },
-    'Projects': {
-        'links': [ 'Home', 'Blog', 'Contact' ],
-        'title': 'Behold my works, ye mighty, and despair'
-    },
-};
+var router = new Navigo(location.origin);
 var root = document.querySelector('#root');
-var render;
 
-function navHandler(event){
-    event.preventDefault();
-    render(State[event.target.textContent]);
+function render(state){
+    root.innerHTML = ` 
+        ${Navigation(state)}
+        ${Header(state.title)}
+        ${Footer(state)}
+        ${Content(state)}
+    `;
+
+    router.updatePageLinks();
 }
 
-render = function Render(state){
-    var links;
-    var i = 0;
+function navHandler(params){
+    var destination = startCase(params.page);
 
-    root.innerHTML = ` 
-    ${Navigation(state)}
-    ${Header(state.title)}
-    ${Footer(state)}
-    ${Content(state)}
-`;
+    render(State[destination]);
+}
 
-    links = document.querySelectorAll('#navigation > ul > li> a');
-
-    while(i < links.length){
-        links[i].addEventListener('click', navHandler);
-
-        i++;
-    }
-};
-
-render(State.Home);
+router
+    .on('/:page', navHandler)
+    .on('/', () => navHandler('Home'))
+    .resolve();

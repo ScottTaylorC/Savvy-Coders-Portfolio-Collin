@@ -1,11 +1,22 @@
-function linkBuilder(linksArr){
-    var i = 0;
-    var linksHtml = '';
+import { lowerCase } from 'lodash';
 
-    while(i < linksArr.length){
-        linksHtml += `<li><a data-navigo href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
-        i++;
-    }
+function linkBuilder(links){
+    var linksHtml = '';
+    var destination = '';
+
+    links.forEach((link) => {
+        if(link !== 'Home'){
+            destination = lowerCase(link);
+        }
+
+        linksHtml += `
+            <li>
+                <a data-navigo href="./${destination}">
+                    ${link}
+                </a>
+            </li>
+        `;
+    });
 
     return linksHtml;
 }

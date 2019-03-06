@@ -28,5 +28,5 @@ function navHandler(params){
 
 router
     .on('/:page', navHandler)
-    .on('/', () => navHandler('Home'))
+    .on('/', () => navHandler({ 'page': 'Home' }))
     .resolve();

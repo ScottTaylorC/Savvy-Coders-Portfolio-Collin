@@ -1,31 +1,29 @@
 import { lowerCase } from 'lodash';
 
 function linkBuilder(links){
-    var linksHtml = '';
     var destination = '';
 
-    links.forEach((link) => {
+    var linksHtml = links.map((link) => {
         if(link !== 'Home'){
             destination = lowerCase(link);
         }
 
-        linksHtml += `
-            <li>
-                <a data-navigo href="./${destination}">
-                    ${link}
-                </a>
-            </li>
+        return `<li>
+            <a data-navigo href="./${destination}">
+                ${link}
+            </a>
+        </li>
         `;
-    });
+    }).join(' ');
 
     return linksHtml;
 }
 
-export default function Navigation(state){
+export default function Navigation(links){
     return `
 <div id="navigation">
         <ul class="container">
-            ${linkBuilder(state.links)}
+            ${linkBuilder(links)}
         </ul>
     </div>
 `;

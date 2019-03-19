@@ -4,6 +4,7 @@
   "description": "![picture](https://pet-uploads.adoptapet.com/b/3/9/98141772.jpg)",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build index.html && cp _redirects ./dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
